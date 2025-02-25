@@ -2,16 +2,17 @@ package bibliotecaejercicios;
 import java.util.Scanner;
 
 //1. Crear la clase
+//2. Crear los atributos
+//3. Crear el constructor
+//4. Crear los metodos
+//5. Llamar objetos
+//6. Llamar metodos
+
 public class B_Factura {
     public static void main(String[] args) {
         facturar();
-    //2. Crear los atributos
-    
     }
     
-    //3. Crear el constructor
-    
-    //4. Crear los metodos
     public static String Teclado(String mensaje) {
         Scanner scanner = new Scanner(System.in);
         System.out.print(mensaje);
@@ -19,11 +20,11 @@ public class B_Factura {
     }
     
     public static void facturar (){
-        String nombClie = Teclado("Ingrese su nombre:");
-        String prod = Teclado("Nombre del producto:");
-        int cant = Integer.parseInt(Teclado("Cuantos productos quiere llevar:"));
-        double precUnit = Double.parseDouble(Teclado("Ingrese el valor unitario:"));
-        boolean estudiante = Teclado("Eres estudiante? (Si/No):").equalsIgnoreCase("si");
+        String nombClie = Teclado("Ingrese su nombre: ");
+        String prod = Teclado("Nombre del producto: ");
+        int cant = Integer.parseInt(Teclado("Cuantos productos quiere llevar: "));
+        double precUnit = Double.parseDouble(Teclado("Ingrese el valor unitario: "));
+        boolean estudiante = Teclado("Eres estudiante? (Si/No): ").equalsIgnoreCase("si");
         
         double subTot = calcSubt(cant, precUnit);
         
@@ -53,5 +54,4 @@ public class B_Factura {
         System.out.println("Impuesto: " + impu);
         System.out.println("Total: " + total);
     }
-    
 }
