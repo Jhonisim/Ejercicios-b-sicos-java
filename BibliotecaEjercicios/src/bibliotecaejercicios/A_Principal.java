@@ -1,5 +1,4 @@
 package bibliotecaejercicios;
-
 import java.util.Scanner;
 
 public class A_Principal {
@@ -40,10 +39,23 @@ public class A_Principal {
                 break;
             
             case 7:
-                H_CalculoIMC calculo = new H_CalculoIMC();
-                calculo.calcularIMC();
+                H_CalculoIMC calculoIMC = new H_CalculoIMC();
+                calculoIMC.calcularIMC();
                 break;
                 
+            case 8:
+                I_AsistenteCine asistenteCine = new I_AsistenteCine();
+                asistenteCine.capturar();
+                asistenteCine.recomendar();
+                break;
+                
+            case 9:
+                J_ResultadoPartido resultadoPartido = new J_ResultadoPartido();
+                resultadoPartido.capturaResultado();
+                resultadoPartido.calculaPuntos();
+                resultadoPartido.muestraPuntos();
+                break;
+                        
             default:
                 throw new AssertionError();
         }
