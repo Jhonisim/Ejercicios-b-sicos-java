@@ -55,6 +55,13 @@ public class A_Principal {
                 resultadoPartido.calculaPuntos();
                 resultadoPartido.muestraPuntos();
                 break;
+                
+            case 10:
+                K_Menu Kmenu = new K_Menu();
+                Kmenu.inicio(sc);
+                Kmenu.proceso();
+                Kmenu.resultado();
+                break;
                         
             default:
                 throw new AssertionError();
